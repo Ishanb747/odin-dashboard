@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.two{
+    width: 20%;
+    height: 120vh;
+    background-color: rgb(9, 136, 255);
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.options1, .options2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 45px 20px;
+}
+
+.texts{
+    font-size: 18px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    fill: white;
+}
+
+.t{
+    font-size: 30px;
+    color: white;
+    font-family: serif;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.opt{
+    display: flex;
+    align-items: center;
+}
+
+.opt .icons {
+    margin-right: 0px;
+    flex-shrink: 0;
+}
+
+.opt .texts {
+    margin-left: 34px; /* Adjust this value to align text */
+}
+
+.one{
+    height: 20vh; /* You can increase this to a larger percentage to ensure the inner divs fit */
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+}
+
+.sideup{
+    width: 84%;
+    height: 20%;
+    background-color: white;
+}
+
+.the{
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+}
+
+.grid{
+    width: 75%;
+    height: 100%;
+    background-color: gray;
+}
+
+.gridside{
+    width: 25%;
+    height: 100%;
+    background-color: gray;
+}
+
+.iconsb {
+    width: 30px;
+    height: 30px;
+    fill: black;
+}
+
+.one .search{
+    width: 100%;
+    height: 45%;
+}
+
+.below{
+    width: 100%;
+    height: 55%;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+
+}
+
+.s1{
+    display: flex;
+    align-items: center;
+    padding: 40px; 
+    width: 70%;
+}
+
+.s2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  
+}
+
+.tsearch{
+    background-color: rgb(214, 212, 212);
+    width: 120%;
+    height: 30px;
+    border-radius: 30px;
+    border-color: rgb(214, 213, 213);
+}
+
+.pfp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+  
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+  
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.user-info {
+    flex-grow: 1;
+}
+  
+.greeting {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+  
+.name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+  
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+.btn.new {
+    background-color: #1da1f2;
+    color: white;
+}
+  
+.btn.upload, .btn.share {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #e6eeff;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 8px solid #ffd700;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.card p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.card-icons span {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gridside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.g1, .g2 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.announcement {
+    margin-bottom: 15px;
+}
+
+.announcement h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.announcement p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.trending-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.trending-item div p:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.trending-item div p:last-child {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+    .gridside {
+        flex-direction: column;
+    }
+    
+    .g1, .g2 {
+        flex: 1;
+    }
+}
+
